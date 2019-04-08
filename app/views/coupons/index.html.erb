@@ -1,0 +1,11 @@
+<h1> record of all coupons </h1>
+
+<ul>
+  <%@coupons.each do |coupon| %>
+  <li>  <%=link_to(coupon.store,coupon_path(coupon.id))%> </li>
+         <%=link_to(coupon.coupon_code,coupon_path(coupon.id))%>   
+
+   <% end %>
+
+
+</ul>

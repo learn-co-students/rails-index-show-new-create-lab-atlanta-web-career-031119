@@ -1,0 +1,7 @@
+<h1> Coupon Form <h1>
+
+<%= form_tag(coupons_path) do %>
+ <input type ="text" name="coupon[coupon_code]" placeholder="code"/>
+ <input type ="text" name="coupon[store]" placeholder="store"/>
+ <input type = "submit" value="Submit Coupon" />
+ <%end%>
