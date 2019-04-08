@@ -1,0 +1,17 @@
+<br>
+<br>
+<h1><b><u>Current Coupon List</u></b></h1>
+<br>
+<br>
+<table border="1">
+<tr><th align="center">&emsp;&emsp;&emsp;&emsp;<u>Store:</u>&emsp;&emsp;&emsp;&emsp;</th><th align="center">&emsp;&emsp;<u>Coupon Code:</u>&emsp;&emsp;</th></tr>
+<% @coupons.each do |coupon| %>
+    <tr>
+    <td align="center"><%= coupon.store %></td>
+    <td align="center"><%= link_to coupon.coupon_code , coupon_path(coupon) %></td>
+    </tr>
+<% end %>
+</table>
+<br>
+<%= link_to "Click here to Create/Add a coupon.", new_coupon_path %>
+<br>

@@ -1,0 +1,17 @@
+<br>
+<h1><b><u>New Coupon Form</u></b></h1>
+<br>
+<%= form_tag coupons_path do %>
+    <label>Coupon Code:</label>
+    <%= text_field_tag(:coupon_code, nil, placeholder: "Coupon Code...") %>
+    <br>
+    <label>Store:</label>
+    <%= text_field_tag(:store, nil, placeholder: "Store Name...") %>
+    <br>
+    <br>
+    <%= submit_tag "Click to create/add coupon!  ^_^" %>
+    <br>
+    <br>
+<% end %>
+
+<%= link_to 'Click here to go back to coupon list.', coupons_path %>
