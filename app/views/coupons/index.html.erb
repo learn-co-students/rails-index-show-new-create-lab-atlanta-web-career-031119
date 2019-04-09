@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <h1>All Coupons</h1>
-        <li><%@all_coup.each do |coup|%>
-            <%=link_to "#{coup.coupon_code}", coupons_path(coup.id)%>
-        <%end%></li>
+        <%@all_coup.each do |coup|%>
+            <li><%=link_to "#{coup.coupon_code}", coupons_path(coup.id)%></li>
+        <%end%>
 </html>
