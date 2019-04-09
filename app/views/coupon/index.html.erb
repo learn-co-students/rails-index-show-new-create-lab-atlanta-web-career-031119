@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html>
+    <h1>All Coupons</h1>
+        <li><%@all_coup.each do |coup|%>
+            <%=link_to "${coup.coupon_code}", coupon_path(coup.id)%>
+        <%end%></li>
+</html>
