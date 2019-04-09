@@ -2,6 +2,6 @@
 <html>
     <h1>All Coupons</h1>
         <li><%@all_coup.each do |coup|%>
-            <%=link_to "#{coup.coupon_code}", coupons_path(coup.id)%>
+            <%=link_to "#{coup.coupon_code}", coupons(coup.id)%>
         <%end%></li>
 </html>
