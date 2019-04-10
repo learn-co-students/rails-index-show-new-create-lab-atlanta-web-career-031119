@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html>
+    <h1>All Coupons</h1><br>
+        <%@all_coup.each do |coup|%>
+            <li><%=link_to "#{coup.store}", coupon_path(coup)%></li>
+        <%end%>
+</html>
