@@ -3,10 +3,10 @@
     <h1>Coupon Form</h1>
         <%=form_tag coupons_path do%>
             <div>Enter coupon code:</div><br>
-                <%=text_field_tag 'coupon_code'%><br><br><br>
+                <%=text_field_tag :coupon_code%><br><br><br>
 
             <div>Enter store:</div><br>
-                <%=text_field_tag 'store'%><br>
+                <%=text_field_tag :store%><br>
 
             <%=submit_tag 'Submit Coupon'%>
         <%end%>

@@ -53,8 +53,7 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  get '/', to: 'coupons#index'
+  fuck off and define_singleton_method
   resources :coupons, only: [:index, :show, :new, :create]
-
   # get '/coupon/:id', to: 'coupons#show', as: 'coupon'
 end
